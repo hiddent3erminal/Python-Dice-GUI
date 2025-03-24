@@ -11,7 +11,7 @@ A fun and interactive graphical dice roller app built with Python and Tkinter. T
 
 ## Screenshots
 
-*(Add screenshots of the app here once available)*
+![Screenshot of the Dice Roller App](Screenshot.png)
 
 ## Installation
 
