@@ -17,7 +17,7 @@ A fun and interactive graphical dice roller app built with Python and Tkinter. T
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/hiddent3erminal/dice-roller-app.git
+   git clone https://github.com/hiddent3erminal/Python-Dice-GUI.git
    cd dice-roller-app
    ```
 
