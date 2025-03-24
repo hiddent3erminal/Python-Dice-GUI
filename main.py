@@ -1,18 +1,22 @@
 import tkinter as tk
 import random
+import time
 
-# Function to roll the dice and display the corresponding numbers
+# Function to roll the dice and display the corresponding numbers with animation
 def roll_dice():
-    dice_number1 = random.randint(1, 6)
-    dice_number2 = random.randint(1, 6) if roll_two.get() else None
+    for _ in range(10):  # Loop to create rolling animation
+        dice_number1 = random.randint(1, 6)
+        dice_number2 = random.randint(1, 6) if roll_two.get() else None
 
-    # Update dice numbers
-    dice_label1.config(text=str(dice_number1), fg=dice_color.get())
-    if dice_number2 is not None:
-        dice_label2.config(text=str(dice_number2), fg=dice_color.get())
-        dice_label2.pack(side="left", padx=20)  # Show second dice
-    else:
-        dice_label2.pack_forget()  # Hide second dice
+        dice_label1.config(text=str(dice_number1), fg=dice_color.get())
+        if dice_number2 is not None:
+            dice_label2.config(text=str(dice_number2), fg=dice_color.get())
+            dice_label2.pack(side="left", padx=20)
+        else:
+            dice_label2.pack_forget()
+
+        window.update()  # Update the window to reflect the new dice number
+        time.sleep(0.1)  # Pause briefly to simulate animation
 
 # Create main window
 window = tk.Tk()
